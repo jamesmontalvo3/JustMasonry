@@ -1,0 +1,26 @@
+{
+	"name": "JustMasonry",
+	"version": "2017.4.18",
+	"author": "James Montalvo",
+	"description": "Throwaway extension just to demonstrate problems loading Masonry",
+	"type": "other",
+	"AutoloadClasses": {
+		"JustMasonry": "JustMasonry.class.php"
+	},
+	"ResourceModules": {
+		"ext.justmasonry": {
+			"scripts": [ "masonry.pkgd.js" ],
+			"position": "top"
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "JustMasonry"
+	},
+	"Hooks": {
+		"BeforePageDisplay": [
+			"JustMasonry::setup"
+		]
+	},
+	"manifest_version": 1
+}
